@@ -12,9 +12,11 @@
 
 
     .card_container {
-        color: #000;
-        width: 300px;
+        // color: #000;
+        width: 500px;
+        min-width: 300px;
         padding: 1rem;
+        // margin: 0 1.2rem;
 
         .card_inputNum {
             outline: none;
