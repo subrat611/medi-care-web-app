@@ -15,7 +15,8 @@ function App() {
   return (
     <div>
       {showLoadingScreen && <LoadingScreen />}
-      {user && showLoadingScreen != true ? <p>Home</p> : <LoginPage />}
+      {user == false && showLoadingScreen == false && <LoginPage />}
+      {user && showLoadingScreen && <p>Home</p>}
     </div>
   );
 }
