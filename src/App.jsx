@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   const [showLoadingScreen, setLoadingScreen] = useState(true);
+  const [user, setUser] = useState(false); // user login state
 
   useEffect(() => {
     if (showLoadingScreen) {
@@ -10,7 +12,12 @@ function App() {
     }
   }, []);
 
-  return <div>{showLoadingScreen && <LoadingScreen />}</div>;
+  return (
+    <div>
+      {showLoadingScreen && <LoadingScreen />}
+      {user & (showLoadingScreen == false) ? <p>Home</p> : <LoginPage />}
+    </div>
+  );
 }
 
 export default App;

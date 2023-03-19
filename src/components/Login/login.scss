@@ -1,0 +1,73 @@
+@use "../../scss/utils" as *;
+
+.login-screen-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: $login-bg-color;
+  font-family: $font-manrope;
+
+  .login-screen-title {
+    padding: 1rem 0.5rem;
+  }
+
+  .login-screen-modal {
+    margin-top: 5rem;
+    padding: 2rem;
+
+    .login-form-wrapper {
+      margin: 2rem 0 0 0;
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem 0;
+        margin: 1rem 0;
+
+        .phoneno-input-wrapper {
+          display: flex;
+          align-items: baseline;
+
+          .phonno-country-code {
+            outline: none;
+            width: 70px;
+            height: 100%;
+            border: none;
+            padding: 0.35rem 0.2rem;
+            font-size: 1rem;
+            font-family: $font-manrope;
+            background: $input-bg-color;
+          }
+
+          input {
+            width: 100%;
+          }
+        }
+
+        input {
+          margin: 0.5rem 0 0 0;
+          padding: 0.4rem 0.5rem;
+          font-size: 1rem;
+          font-family: $font-manrope;
+          background: $input-bg-color;
+          border: none;
+          outline: none;
+        }
+      }
+
+      .btn {
+        border: none;
+        width: 100%;
+        background-color: $btn-bg;
+        color: #fff;
+        font-family: $font-manrope;
+        font-size: 0.9rem;
+        font-weight: $font-manrope-semibold;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+        margin: 1rem 0 0 0;
+        letter-spacing: 0.1em;
+        border-radius: 50px;
+      }
+    }
+  }
+}
