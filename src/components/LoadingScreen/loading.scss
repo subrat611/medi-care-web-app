@@ -1,26 +1,24 @@
-@media all and (max-width: "414px") {
-  .loading-wrapper {
-    height: 100vh;
-    width: 100vw;
-    background-color: #4361ee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+.loading-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #4361ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 
-    .loading-logo {
-      font-family: "Manrope", sans-serif;
-      letter-spacing: 0.02em;
-      color: #edf2fb;
-    }
+  .loading-logo {
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.02em;
+    color: #edf2fb;
+  }
 
-    .loading-bg-texture {
-      position: absolute;
-      bottom: 0;
-      left: -50%;
-      height: 20%;
-      background-position: center;
-    }
+  .loading-bg-texture {
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    height: 20%;
+    background-position: center;
   }
 }
