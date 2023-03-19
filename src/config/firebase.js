@@ -1,4 +1,9 @@
 import { initializeApp } from "firebase/app";
+import {
+  getAuth,
+  signInWithPhoneNumber,
+  onAuthStateChanged,
+} from "firebase/auth";
 
 const {
   VITE_API_KEY,
@@ -21,4 +26,13 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const firebase = initializeApp(firebaseConfig);
+
+export const auth = getAuth(firebase);
+
+export const phoneNumberSignIn = async (phoneNumber, appVerifier) => {
+  return await signInWithPhoneNumber(auth, phoneNumber, appVerifier);
+};
+
+export const onAuthStateChangedListener = (listenerCallback) =>
+  onAuthStateChanged(auth, listenerCallback);
