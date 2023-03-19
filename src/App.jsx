@@ -14,11 +14,11 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
       {showLoadingScreen && <LoadingScreen />}
       {currentUser === null && showLoadingScreen === false && <LoginPage />}
       {currentUser !== null && showLoadingScreen === false && <p>Home</p>}
-    </div>
+    </>
   );
 }
 
