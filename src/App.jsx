@@ -1,6 +1,8 @@
 import { useEffect, useState, useContext } from "react";
-import LoadingScreen from "./components/LoadingScreen";
 import { UserContext } from "./context/User";
+
+import LoadingScreen from "./components/LoadingScreen";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
     <>
       {showLoadingScreen && <LoadingScreen />}
       {currentUser === null && showLoadingScreen === false && <LoginPage />}
-      {currentUser !== null && showLoadingScreen === false && <p>Home</p>}
+      {currentUser !== null && showLoadingScreen === false && <HomePage />}
     </>
   );
 }
