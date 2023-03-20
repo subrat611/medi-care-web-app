@@ -1,0 +1,20 @@
+@use "../../scss/utils" as *;
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem 1rem 1rem;
+  font-family: $font-manrope;
+
+  .signout-btn {
+    all: unset;
+    text-align: center;
+    background: #f42829;
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    color: $input-bg-color;
+    font-weight: $font-manrope-semibold;
+    font-size: 1rem;
+  }
+}
