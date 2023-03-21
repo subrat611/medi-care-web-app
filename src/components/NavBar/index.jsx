@@ -21,7 +21,7 @@ export default function NavBar() {
   return (
     <nav className="navbar-wrapper">
       <h2>{currentGreet}</h2>
-      <button className="signout-btn">Sign out</button>
+      <button className="signout-btn">Log out</button>
     </nav>
   );
 }
